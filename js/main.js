@@ -1,5 +1,4 @@
 import {
-  API_KEY,
   BASE_URL,
   IMG_URL,
   LANGUAGE,
@@ -10,7 +9,7 @@ window.addEventListener("load", () => {
   button.addEventListener('click', getRandomMovie);
   function getRandomMovie() {
     const MOVIE = (Math.round(Math.random() * (1000 - 1) + 1));
-    const apiUrl = BASE_URL+MOVIE+API_KEY+LANGUAGE;  
+    const apiUrl = BASE_URL+MOVIE+config.API_KEY+LANGUAGE;  
     fetch(apiUrl)
       .then(response => response.json())
       .then(itemMovie => {
