@@ -74,6 +74,7 @@ body {
   margin-top: 25px;
   color: var(--subtitle);
   font-weight: 400;
+  padding: 0 16px;
 }
 
 .movie {
