@@ -1,13 +1,15 @@
 import {
   API_KEY,
-  BASE_URL,
-  IMG_URL,
-  LANGUAGE,
 } from './api.js'
 
 window.addEventListener("load", () => {
+  const BASE_URL = 'https://api.themoviedb.org/3/movie/';
+  const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+  const LANGUAGE = '&language=pt-BR';
+
   const button = document.querySelector('.search-movie-button');
   button.addEventListener('click', getRandomMovie);
+
   function getRandomMovie() {
     const MOVIE = (Math.round(Math.random() * (1000 - 1) + 1));
     const apiUrl = BASE_URL+MOVIE+API_KEY+LANGUAGE;
