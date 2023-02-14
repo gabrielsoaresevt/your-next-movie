@@ -18,3 +18,7 @@ Você encontrará o código abaixo, altera `<<API_KEY>>` pela sua chave api e re
 ```javascript
 export const API_KEY = '?api_key=<<API_KEY>>';
 ```
+
+## 📄 Licença
+### The MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
